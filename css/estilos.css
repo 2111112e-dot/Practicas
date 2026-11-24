@@ -1,0 +1,121 @@
+/* DISEÑO GENERAL - CONTRASTE DE TIPOGRAFÍAS */
+body {
+    background-color: #f2e8df;
+    font-family: 'Georgia', serif; /* Contraste: tipografía tradicional para lectura fluida */
+    margin: 25px;
+    color: #333333;
+}
+
+/* REPETICIÓN: Clases reutilizables para unificar el diseño visual */
+.linea-repetitiva {
+    border-bottom: 4px dashed #165b36; /* Línea decorativa constante */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* ENCABEZADO - CONTRASTE EXTREMO */
+header {
+    background-color: #a51d2d;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-bottom: 10px solid #165b36; /* Contraste radical de colores block */
+}
+
+header h1 {
+    font-family: 'Arial', sans-serif; /* Contraste: tipografía moderna sin serifas */
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* SECCIONES Y ARTÍCULOS - REPETICIÓN DE SOMBRAS */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-top: 40px;
+    
+    /* Repetición: estilo de caja con bordes gruesos y sombras sólidas */
+    border: 4px solid #a51d2d;
+    box-shadow: 12px 12px 0px #165b36; 
+}
+
+/* TITULOS */
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #a51d2d;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    color: #165b36;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+/* PARRAFOS */
+p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* ENLACES - CONTRASTE (Botones visualmente pesados) */
+.enlace-destacado {
+    display: inline-block;
+    background-color: #a51d2d;
+    color: white;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    
+    /* Repetición del patrón de sombras del contenedor section */
+    border: 2px solid #333333;
+    box-shadow: 6px 6px 0px #165b36;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.enlace-destacado:hover {
+    color: #f2e8df;
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0px #165b36;
+}
+
+/* IMAGEN CIRCULAR */
+.imagen {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Repetición del borde punteado y contraste de color */
+    border: 6px dashed #a51d2d; 
+    display: block;
+    margin: 20px auto;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #165b36;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 10px solid #a51d2d; /* Repetición del borde grueso del header, pero invertido */
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
